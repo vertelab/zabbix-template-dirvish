@@ -3,6 +3,7 @@ all : dependent.tmp configs.tmp scripts.tmp
 
 dependent.tmp:
 	@sudo apt -y install zabbix-agent
+	@sudo pip install hurry.filesize
 	@touch dependent.tmp
 
 configs.tmp: configs/sudoers.d--zabbix-dirvish  configs/zabbix-dirvish.conf
