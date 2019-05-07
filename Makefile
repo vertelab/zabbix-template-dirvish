@@ -11,9 +11,9 @@ configs.tmp: configs/sudoers.d--zabbix-dirvish  configs/zabbix-dirvish.conf
 	@sudo cp configs/zabbix-dirvish.conf /etc/zabbix/zabbix_agentd.conf.d
 	@touch configs.tmp
 
-scripts.tmp: scripts/dirvish_backup_stats.pl  scripts/discover.dirvish-repos.pl
+scripts.tmp: scripts/dirvish_backup_stats.py  scripts/discover.dirvish-repos.py
 	@sudo mkdir -p /etc/zabbix/scripts/agentd/dirvish
-	@sudo cp -r scripts/dirvish_backup_stats.pl  scripts/discover.dirvish-repos.pl /etc/zabbix/scripts/agentd/dirvish
+	@sudo cp -r scripts/dirvish_backup_stats.py  scripts/discover.dirvish-repos.py /etc/zabbix/scripts/agentd/dirvish
 	@touch scripts.tmp
 
 clean:

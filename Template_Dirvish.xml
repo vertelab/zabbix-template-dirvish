@@ -271,7 +271,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Template_Dirvish:custom.dirvish.change_size[{#FULLNAME}].last(#3)}&gt;{$RDIFF_MIN_CHANGE_NEG} &amp; {Template_Dirvish:custom.dirvish.change_size[{#FULLNAME}].last(#3)}&lt;0</expression>
+                            <expression>{Template_Dirvish:custom.dirvish.change_size[{#FULLNAME}].last(#3)}&gt;{$DIRVISH_MIN_CHANGE_NEG} &amp; {Template_Dirvish:custom.dirvish.change_size[{#FULLNAME}].last(#3)}&lt;0</expression>
                             <name>Dirvish-backup - backup change size is LOW on {#NAME}</name>
                             <url/>
                             <status>0</status>
@@ -280,7 +280,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template_Dirvish:custom.dirvish.change_size[{#FULLNAME}].last(#3)}&lt;{$RDIFF_MIN_CHANGE} &amp; {Template_Dirvish:custom.dirvish.change_size[{#FULLNAME}].last(#3)}&gt;0</expression>
+                            <expression>{Template_Dirvish:custom.dirvish.change_size[{#FULLNAME}].last(#3)}&lt;{$DIRVISH_MIN_CHANGE} &amp; {Template_Dirvish:custom.dirvish.change_size[{#FULLNAME}].last(#3)}&gt;0</expression>
                             <name>Dirvish-backup - backup change size is LOW on {#NAME}</name>
                             <url/>
                             <status>0</status>
@@ -298,7 +298,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template_Dirvish:custom.dirvish.start_time_timestamp[{#FULLNAME}].fuzzytime({$RDIFF_MISSED_SEC})}=0</expression>
+                            <expression>{Template_Dirvish:custom.dirvish.start_time_timestamp[{#FULLNAME}].fuzzytime({$DIRVISH_MISSED_SEC})}=0</expression>
                             <name>Dirvish-backup - backup missed on {#NAME}</name>
                             <url/>
                             <status>0</status>

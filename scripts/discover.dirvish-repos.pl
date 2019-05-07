@@ -21,7 +21,7 @@ $Options =
 loadconfig(undef, "/etc/dirvish/master.conf", $Options);
 print $$Options{'bank'};
 
-$scan_folder = "/srv/backups";
+$scan_folder = "/srv/backup";
 $scan_prefix = "dirvish";
 
 my @find_cmd = ("find", "$scan_folder/", "-maxdepth", "1", "-name", "$scan_prefix*", "-type", "d");
