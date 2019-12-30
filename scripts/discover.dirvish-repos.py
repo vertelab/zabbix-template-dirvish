@@ -169,9 +169,9 @@ def do_discover():
         ]
 }
 """ % ',\n'.join(["""           {
-                {#NAME}:%s
-                {#FULLNAME}:%s
-                {#STARTTIME}:%s
+                '{#NAME}':'%s',
+                '{#FULLNAME}':'%s',
+                '{#STARTTIME}':'%s',
             }""" % (v,vault_dict[v]['fullname'],vault_dict[v]['starttime']) for v in vault_dict.keys()])
         
 

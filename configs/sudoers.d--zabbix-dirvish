@@ -2,7 +2,7 @@
 #
 Defaults:zabbix !requiretty
 #
-zabbix  ALL=(ALL)       NOPASSWD: /etc/zabbix/plugins/discover.dirvish-repos.pl
-zabbix  ALL=(ALL)       NOPASSWD: /etc/zabbix/plugins/dirvish_backup_stats.pl *
+zabbix  ALL=(ALL)       NOPASSWD: /etc/zabbix/plugins/discover.dirvish-repos.py
+zabbix  ALL=(ALL)       NOPASSWD: /etc/zabbix/plugins/dirvish_backup_stats.py *
 
 
